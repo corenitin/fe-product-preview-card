@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+@media (max-width: 376px) {
+  body {
+    background-color: hsl(30, 38%, 92%);
+    padding: 10px;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+    height: 610px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%); /* Better contrast */
+    overflow: hidden;
+  }
+
+  .container .image {
+    width: 100%; /* Makes it responsive */
+    max-width: 100%;
+    display: block;
+    margin: auto;
+    content: url(images/image-product-mobile.jpg);
+  }
+  .container .mini-container {
+    padding: 20px;
+    line-height: 0.9;
+  }
+  .container .mini-container #p0 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    font-weight: 500;
+  }
+  .container .mini-container #h0 {
+    font-family: "Fraunces", serif;
+    color: hsl(158, 42%, 18%);
+    font-weight: 700;
+  }
+  .container .mini-container #p1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  .container .mini-container #h1 {
+    font-family: "Fraunces", serif;
+    color: hsl(158, 42%, 18%);
+    font-weight: 700;
+  }
+  .container .mini-container #h1 span {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(158, 42%, 18%);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: line-through;
+  }
+  .container .mini-container button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .container .mini-container button:hover{
+    background-color: hsl(158, 42%, 18%);
+  }
+  .container .mini-container button p {
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+}
+
+@media (min-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .container {
+    width: 600px;
+    height: 450px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .container .image {
+    width: 300px;
+    margin-left: -40px;
+    content: url(images/image-product-desktop.jpg);
+  }
+  .container .mini-container {
+    margin: 20px;
+  }
+  .container .mini-container #p0 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  .container .mini-container #h0 {
+    font-family: "Fraunces", serif;
+    color: hsl(158, 42%, 18%);
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .container .mini-container #p1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+  .container .mini-container #h1 {
+    font-family: "Fraunces", serif;
+    color: hsl(158, 42%, 18%);
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  .container .mini-container #h1 span {
+    font-family: "Montserrat", sans-serif;
+    color: hsl(158, 42%, 18%);
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: line-through;
+    margin-bottom: 25px;
+  }
+  .container .mini-container button {
+    border-radius: 5px;
+    margin-bottom: 25px;
+    width: 300px;
+    height: 60px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+
+  .container .mini-container button p {
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+  .container .mini-container button:hover{
+    background-color: hsl(158, 42%, 18%);
+  }
+}
